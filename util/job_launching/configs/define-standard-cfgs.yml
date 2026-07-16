@@ -69,6 +69,9 @@ MULTI_KERNEL:
 64SM:
     extra_params: "-gpgpu_n_clusters 64"
 
+8CLUSTER:
+    extra_params: "-gpgpu_n_cores_per_cluster 8"
+
 PTXPLUS:
     extra_params: "-gpgpu_ptx_convert_to_ptxplus 1 -gpgpu_ptx_force_max_capability 10"
 
