@@ -160,11 +160,21 @@ FRFCFS:
 FCFS:
     extra_params: "-gpgpu_dram_scheduler 0"
 
+# CTA Scheduling configs
+SPREAD:
+    extra_params: "-gpgpu_cta_scheduler spread"
+    
+FLAT:
+    extra_params: "-gpgpu_cta_scheduler flat"
+
+GREEDY:
+    extra_params: "-gpgpu_cta_scheduler greedy"
+
 # Experimental - for SM 60 PTXplus support
 PTXPLUS_SM6:
     extra_params: "-gpgpu_ptx_convert_to_ptxplus 1 -gpgpu_ptx_force_max_capability 62 -gpgpu_ptx_force_min_capability 60"
 
-#Accelwattch configs
+# Accelwattch configs
 Accelwattch_SASS_SIM:
     extra_params: "-power_simulation_enabled 1
     \n-power_simulation_mode 0
